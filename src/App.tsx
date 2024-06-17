@@ -1,9 +1,10 @@
 import React from 'react';
+import CodeEditor from './CodeEditor';
 
 function App() {
   return (
-    <div className='text-blue-400'>
-      Hello
+    <div className='flex justify-center items-center mt-36'>
+      <CodeEditor/>
     </div>
   )
 }
