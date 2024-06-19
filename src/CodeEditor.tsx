@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Highlight, themes } from "prism-react-renderer";
+import Editor from '@monaco-editor/react';
 
 const CodeEditor = () => {
   const [textComingFromTextArea, setTextComingFromTextArea] =
@@ -29,6 +30,8 @@ ReactDOM.render(<App />, document.getElementById("root"));`);
       >
         Github
       </a>
+
+      <Editor className="my-5" height="30vh" defaultLanguage="javascript" defaultValue={textComingFromTextArea} />
 
       <div className="flex items-center gap-x-5">
         <div>
